@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Easy-Vreco</title>
+  <!-- iconos materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- css materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <div class="row">
+    <div class="col s12 m12 l12 xl12">
+      <header>
+        <div class="col s6 m3 l3 xl3">
+          <input type="text" id="punto-partida" placeholder="Ingresa tu punto de partida">
+        </div>
+        <div class="col s6 m3 l3 xl3">
+          <input type="text" id="punto-destino" placeholder="Ingresa tu punto de termino">
+        </div>
+        <div class="col s6 m3 l3 xl3 center-align">
+          <i class="material-icons right"></i>
+          <button id="trazar-ruta" class="btn waves-effect waves-light  light-green">Trazar ruta
+            <i class="material-icons rigth">send</i>
+          </button>
+        </div>
+        <div class="col s6 m3 l3 cl3 right-align">
+          <button id="encuentrame" class="btn waves-effect waves-light  light-green">Encuentrame
+            <i class="material-icons rigth">adjust</i>
+          </button>
+        </div>
+      </header>
+    </div>
+  </div>
+  <section>
+    <div class="row">
+      <div class="col s12 m12 l12 xl12">
+        <div id="map"></div>
+      </div>
+    </div>
+  </section>
+  <!-- script -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtEklmwmNO77SH5KJTvPUUsOOQBjcxR_0&callback=initMap&libraries=places">
+  </script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
